@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4848"
+    tools:context=".Register">
+
+    <EditText
+        android:layout_marginTop="60dp"
+        android:id="@+id/edit_Name"
+        android:layout_marginLeft="6dp"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_person_name"
+        android:drawablePadding="5dp"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:hint="Name (min 3 charactor)" />
+
+    <EditText
+        android:layout_centerInParent="true"
+        android:id="@+id/edit_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_email_name"
+        android:drawablePadding="5dp"
+        android:layout_below="@+id/edit_Name"
+        android:background="#ffffff"
+        android:hint="Email Address" />
+
+    <EditText
+        android:layout_centerInParent="true"
+        android:id="@+id/edit_Number"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_mobile_name"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_Email"
+        android:background="#ffffff"
+        android:hint="Mobile Number (10 digits)" />
+
+    <EditText
+        android:id="@+id/edit_delivery"
+        android:layout_centerInParent="true"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_Number"
+        android:drawableLeft="@drawable/ic_location_name"
+        android:drawablePadding="5dp"
+        android:background="#ffffff"
+        android:hint="Delivery Address" />
+
+    <EditText
+        android:id="@+id/edit_Password"
+        android:layout_centerInParent="true"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_delivery"
+        android:drawableLeft="@drawable/ic_lock_name"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="5dp"
+        android:background="#ffffff"
+        android:layout_marginTop="13dp"
+        android:hint="Password (Min 4 Characters)" />
+
+    <EditText
+        android:id="@+id/edit_Confirm"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_lock_name"
+        android:drawablePadding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_Password"
+        android:layout_marginTop="13dp"
+        android:background="#ffffff"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/Register_btn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_Confirm"
+        android:background="#FF4848"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="13dp"
+        android:textSize="20sp"
+        app:backgroundTint="#EF2828" />
+
+
+</RelativeLayout>

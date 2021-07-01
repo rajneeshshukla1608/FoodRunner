@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4848"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/image_Login"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/splash_logo" />
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/image_Login"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_mobile_name"
+       android:hint="Mobile Number" />
+
+
+    <EditText
+        android:id="@+id/edit_2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_lock_name"
+        android:layout_below="@+id/edit_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="21dp"
+        android:background="#ffffff"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="22dp"
+        android:background="#FF4848"
+        android:text="Login"
+        android:textSize="20sp"
+        app:backgroundTint="#EF2828" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="FogotPassword?" />
+    
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_t_have_an_account_sign_up_now"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</RelativeLayout>
